@@ -35,7 +35,6 @@ class _AnimatedButtonState extends State<AnimatedButton>
   @override
   Widget build(BuildContext context) {
     _scale = 1 - _controller.value;
-    print(_controller.value);
 
     return GestureDetector(
       onTapDown: _onTapDown,
