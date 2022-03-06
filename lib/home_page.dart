@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/widgets/fade_in_down_transition.dart';
 
 import 'widgets/animated_button.dart';
 
@@ -30,7 +31,18 @@ class _HomePageState extends State<HomePage> {
                 ),
               );
             },
-          )
+          ),
+          const SizedBox(height: 20),
+          FadeInDownTransition(
+            controller: (controller) {
+              controller.forward();
+            },
+            child: Container(
+              width: 80,
+              height: 80,
+              color: Colors.orange,
+            ),
+          ),
         ]),
       ),
     );
