@@ -24,7 +24,10 @@ class _HomePageState extends State<HomePage> {
           AnimatedButton(
             onTap: () {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Pressed')),
+                const SnackBar(
+                  content: Text('Pressed'),
+                  duration: Duration(milliseconds: 200),
+                ),
               );
             },
           )
