@@ -2,4 +2,10 @@
 
 
 ## Animated Button
-<img src="assets/animated_button.gif" height="200" width="300">
+<img src="assets/animated_button.gif" height="200" width="250">
+
+</br>
+</br>
+
+## Fade Transition
+<img src="assets/fade_transition.gif" height="200" width="600">
