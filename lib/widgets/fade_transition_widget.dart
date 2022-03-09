@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/transition_direction.dart';
+
+import '../transition_direction.dart';
 
 class FadeTransitionWidget extends StatefulWidget {
   const FadeTransitionWidget({
