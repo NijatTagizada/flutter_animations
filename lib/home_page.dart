@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/widgets/custom_transition_widget.dart';
 
 import 'transition_direction.dart';
 import 'widgets/animated_button.dart';
@@ -16,6 +17,7 @@ class _HomePageState extends State<HomePage> {
   late AnimationController rightCtrl;
   late AnimationController bottomCtrl;
   late AnimationController topCtrl;
+  late AnimationController customCtrl;
 
   @override
   Widget build(BuildContext context) {
@@ -36,11 +38,13 @@ class _HomePageState extends State<HomePage> {
                   leftCtrl.reset();
                   rightCtrl.reset();
                   bottomCtrl.reset();
+                  customCtrl.reset();
 
                   topCtrl.forward();
                   leftCtrl.forward();
                   rightCtrl.forward();
                   bottomCtrl.forward();
+                  customCtrl.forward();
                 },
               ),
               const SizedBox(height: 40),
@@ -96,7 +100,19 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ],
-              )
+              ),
+              const SizedBox(height: 60),
+              CustomTransitionWidget(
+                controller: (controller) {
+                  customCtrl = controller;
+                },
+                offset: const Offset(-1.5, 3),
+                child: Container(
+                  width: 60,
+                  height: 60,
+                  color: Colors.orange,
+                ),
+              ),
             ],
           ),
         ),
