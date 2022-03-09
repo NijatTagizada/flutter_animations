@@ -11,5 +11,5 @@
 <img src="assets/fade_transition.gif" height="200" width="600">
 
 
-## Custom Direction 
+## Custom Direction Transition
 <img src="assets/custom_transition.gif" >
